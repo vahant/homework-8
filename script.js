@@ -289,12 +289,11 @@ let teacher1 = new Teacher("Tigran", "Margaryan", "male", 55, "math", 300)
 
 // console.log(teacher1.toString())
 
-// class Clock{
-//     constructor(hours, mins, secs){
-//         this.hours = hours;
-//         this.mins = mins;
-//         this.secs = secs;
-//     }
-// }
-
+class Clock{
+    constructor(hours, mins, secs){
+        this.hours = hours;
+        this.mins = mins;
+        this.secs = secs;
+    }
+}
 

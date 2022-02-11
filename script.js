@@ -289,11 +289,23 @@ let teacher1 = new Teacher("Tigran", "Margaryan", "male", 55, "math", 300)
 
 // console.log(teacher1.toString())
 
+
+//its not working
 class Clock{
     constructor(hours, mins, secs){
         this.hours = hours;
         this.mins = mins;
         this.secs = secs;
     }
+
+    log(){
+        console.log(this.hours, ":", this.mins, ":", this.secs)
+    }
+    start(){
+        setInterval(console.log(this.hours, ":", this.mins, ":", this.secs), 1000)
+    }
 }
 
+let data = new Date()
+let clock1 = new Clock(data.getHours(), data.getMinutes(), data.getSeconds())
+clock1.start()
